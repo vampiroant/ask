@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOCO Ask</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the button below!</h1>
+    <button onclick="askHOCO()">Click Me!</button>
+
+    <script>
+        function askHOCO() {
+            let answer = confirm("Would you go to HOCO with me? 💃🕺");
+            if (answer) {
+                alert("Yay! I can't wait! 😊");
+            } else {
+                alert("No worries, maybe next time! 😅");
+            }
+        }
+    </script>
+</body>
+</html>
